@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+  <link rel="stylesheet" href="stylesheets/maindesign3.css" />
+  <link rel="icon"
+        type="image/png"
+        href="ressources/nysl_logo.png">
+  <meta charset="utf-8" />
+  <title>Registation Form</title>
+</head>
+<body
+<!--Header-->
+  <div id="bloc_page">
+
+    <nav>
+      <div class="title2">
+        <h1>Northside Youth Soccer League</h1>
+      </div>
+      <div class="nav_bar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="rules.html">Rules</a></li>
+          <li><a href="game_info.html">Games</a></li>
+          <li><a class="active" a href="index.html">Registration</a></li>
+          <li><img src="ressources/nysl_logo.png" alt="nysl_minilogo" /></a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="header">
+      <div class="title">
+        <h1>Northside Youth Soccer League</h1>
+      </div>
+    </div>
+
+    <div class="logo">
+      <img src="ressources/nysl_logo.png" alt="nysl_logo" />
+    </div>
+
+<!--Form-->
+    <article>
+      <div>
+        <h1 class="formtitle">Registration Form</h1>
+      </div>
+      <section>
+
+
+
+
+<!--<div class="regformstyle">-->
+        <script src="FormValidation.js"></script>
+        <form method="get" action="show_data.html">
+          <div class="flexform">
+            <div class="halfwide">
+              Player’s First Name:<input id="userField" type="text" name="first name" required onchange="validatePlayersName(userField)">
+
+
+              Last Name:<input id="lastName" type="text" name="last name" required onchange="validatePlayersName(lastName)">
+            </div>
+          </div>
+          <div class="flexform">
+
+            <div class="fullwide">Street Address: <input type="text" name="adress" rows="2"></div>
+          </div>
+          <div class="flexform">
+            <div class="halfwide">
+              City:<input type="text" name="city">
+              Zip Code:<input type="text" name="zip code" onchange="myFunction()">
+            </div>
+          </div>
+          <div class="flexform">
+            Birth Date (dd/mm/yyyy):<input class="bdate" type="date" name="birth date">
+          </div>
+          <div class="flexform">
+            Gender:<input type="radio" name="gender" value="Female">Female
+            <input type="radio" name="gender" value="Male">Male
+          </div>
+          <div class="flexform">
+            Grade: <input class="rank" type="radio" name="grade" value="Preschool">Pre-School
+            <input class="rank" type="radio" name="grade" value="second"> 2<sup>nd</sup>
+            <input class="rank" type="radio" name="grade" value="third"> 3<sup>rd</sup>
+            <input class="rank" type="radio" name="grade" value="fourth"> 4<sup>th</sup>
+            <input class="rank" type="radio" name="grade" value="fifth"> <sup>5th</sup>
+          </div>
+          <div class="flexform">
+            <div class="fullwide"> Parent/Guardian: <input type="text" name="parent"></div>
+            <div class="halfwide">
+              Contact Phone:<input type="tel" name="phone">Contact Email:<input type="email" name="email">
+            </div>
+          </div>
+          <p><strong>Which elementary schools do you live near?</strong></p>
+          <div class="flexform">
+
+            <p><strong>First Closest School:</strong></p>
+            <select name="firstschool">
+              <option value="" selected disabled>Please select a school</option>
+              <option value="AJ Katzenmaier">AJ Katzenmaier</option>
+              <option value="Greenbay">Greenbay</option>
+              <option value="Howard A Yeager">Howard A Yeager</option>
+              <option value="Marjorie P Hart">Marjorie P Hart</option>
+              <option value="North Elementary">North Elementary</option>
+              <option value=" South Elementary">South Elementary</option>
+            </select>
+
+          </div>
+          <div class="flexform">
+
+            <p><strong>Second Closest School:</strong></p>
+            <select name="secondschool">
+              <option value="" selected disabled>Please select a school</option>
+              <option value="AJ Katzenmaier">AJ Katzenmaier</option>
+              <option value="Greenbay">Greenbay</option>
+              <option value="Howard A Yeager">Howard A Yeager</option>
+              <option value="Marjorie P Hart">Marjorie P Hart</option>
+              <option value="North Elementary">North Elementary</option>
+              <option value=" South Elementary">South Elementary</option>
+            </select>
+
+          </div>
+
+          <div class="flexform">
+
+            <p><strong>What position(s) do you want to play?</strong> (check all that apply)</p>
+            <table>
+              <tr>
+                <td><input type="checkbox">Forward</td>
+                <td><input type="checkbox">Midfield</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox">Defense</td>
+                <td><input type="checkbox">Goalkeeper</td>
+              </tr>
+            </table>
+          </div>
+          <div class="flexform">
+            <p><input type="checkbox"><strong>Already Have a Uniform</strong></p>
+
+            <table class="tablestyle">
+              <tr>
+                <th><strong>Jersey Size:</strong></th>
+                <th></th>
+                <th><strong>Shorts Size:</strong></th>
+                <th></th>
+              </tr>
+              <tr>
+                <td><input type="radio" name="Jersey size" value="Youth Small">Youth Small</td>
+                <td><input type="radio" name="Jersey size" value="Medium">Medium</td>
+                <td><input type="radio" name="Shorts size" value="Youth Small">Youth Small</td>
+                <td><input type="radio" name="Shorts size" value="Medium">Medium</td>
+              </tr>
+              <tr>
+                <td><input type="radio" name="Jersey size" value="Youth Medium">Youth Medium</td>
+                <td><input type="radio" name="Jersey size" value="Large">Large</td>
+                <td><input type="radio" name="Shorts size" value="Youth Medium">Youth Medium</td>
+                <td><input type="radio" name="Shorts size" value="Large">Large</td>
+              </tr>
+              <tr>
+                <td><input type="radio" name="Jersey size" value="Youth Large">Youth Large</td>
+                <td><input type="radio" name="Jersey size" value="Extra-Large">Extra-Large</td>
+                <td><input type="radio" name="Shorts size" value="Youth Large">Youth Large</td>
+                <td><input type="radio" name="Shorts size" value="Extra-Large">Extra-Large</td>
+              </tr>
+              <tr>
+                <td><input type="radio" name="Jersey size" value="Small">Small</td>
+                <td></td>
+                <td><input type="radio" name="Shorts size" value="Small">Small</td>
+                <td></td>
+              </tr>
+            </table>
+          </div>
+
+
+          <div class="flexform">
+
+            Parent/Guardian Signature:<input type="text" name="signature">
+            Date:<input type="date" name="date">
+
+          </div>
+
+          <div class="submit">
+            <input type="submit" value="Submit">
+          </div>
+
+
+
+
+        </form>
+      </section>
+    </article>
+</body>
+</html>

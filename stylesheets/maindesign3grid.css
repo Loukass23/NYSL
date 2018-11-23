@@ -1,0 +1,397 @@
+﻿body {
+ font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(to right, white, #71a377);
+}
+.main-grid {
+  display: grid;
+  grid-template-columns: 70% 1fr;
+  grid-template-rows: 10vw 10% 1fr;
+  grid-gap: 1em;
+  padding-left: 10%;
+  margin-top: 10px;
+}
+
+header,
+footer, .pageTitle {
+  grid-column: 1 / span 2;
+
+}
+
+
+header {
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: 80% 10%;
+  justify-content: center;
+  align-items: center;
+  background: url('design1_image1.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position-y: top;
+}
+
+@font-face {
+  font-family: customFont;
+  src: url(BrothersRegular.otf);
+}
+
+.title {
+  text-align: center;
+  font-family: customFont;
+  text-transform: uppercase;
+  color: white;
+  font-size: 90%;
+  background-color: rgba(0, 102, 102, .9);
+  visibility: visible;
+}
+
+
+.logo img{
+  margin-left: 10%;
+  max-width: 80%;
+  height: auto;
+   
+  animation-name: logo-anim;
+  animation-duration: 2s;
+  animation-direction: alternate;
+}
+/*
+@keyframes logo-anim {
+  0% {
+    max-width: 0%;
+  }
+
+  100% {
+    max-width: 80%;
+  }
+}
+*/
+@media {
+  img {
+    width: auto; 
+  }
+}
+
+h1 {
+  text-align:center;
+}
+ /*Nav bar*/
+
+nav ul {
+  
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin-top: 10px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  width: 10%;
+  z-index: 99999;
+ 
+
+}
+
+  nav ul:hover {
+    animation-name: pull-out-nav;
+    animation-duration: 5s;
+    animation-direction: alternate;
+  
+  }
+@keyframes pull-out-nav {
+  0% {
+    width: 10%;
+   
+  }
+    
+  20% {
+    width:20%;
+   
+      }  
+
+  100% {
+    width: 20%;
+    
+  }
+}
+
+
+
+@keyframes show-nav {
+  0% {
+   color: black;
+  }
+  100% {
+    color: aqua;
+  }
+}
+
+  nav li img {
+    margin-right: 0px;
+    padding: 0px 0px;
+    height: 30px
+  }
+
+nav li a {
+ 
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+  nav a {
+
+    background-color: rgba(0, 0, 0, .3);
+    color: #ddf1ca;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  nav a:hover {
+    background-color: #ddd;
+    color: black;
+    animation-name: show-nav;
+    animation-duration: .25s;
+    animation-delay: .2s;
+  }
+
+  nav a.active {
+    background-color: rgba(0, 102, 102, .9);
+    color: #32d519;
+  }
+
+  nav img {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+
+
+  .imagesection img {
+    visibility: collapse;
+  }
+
+
+/*page Title*/
+.pageTitle {
+  font-family: customFont;
+  color: white;
+  text-align: left;
+  background-color: rgba(0, 0, 0, .3);
+  
+}
+/*Body*/
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 10px;
+  animation-name: main-anim;
+  animation-duration: .5s;
+  animation-direction: alternate;
+}
+
+@keyframes main-anim {
+  0% {
+    margin-top: 100%;
+  }
+
+  100% {
+    margin-top: 0%;
+  }
+}
+
+
+.game_grid {
+ 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px ;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 10px;
+  
+}
+
+
+}
+section h1 {
+  font-size: x-large;
+}
+
+  section h2 {
+    text-transform: uppercase;
+    font-size: large;
+  }
+
+  section p {
+    font-size: medium;
+  }
+
+  article {
+    text-align: left
+  }
+
+  section ul {
+    list-style-type: decimal;
+  }
+
+  .latin_ul ul {
+    list-style-type: lower-latin;
+  }
+
+  .square_ul ul {
+    list-style-type: square;
+  }
+
+  .decimal_ul ul {
+    list-style-type: decimal;
+  }
+
+  .circle_ul ul {
+    list-style-type: circle;
+  }
+
+
+  section img {
+    max-width: 200px;
+    float: left;
+    margin-left: 10px;
+  }
+
+
+
+  section {
+  
+    margin-left: 10%;
+    padding-right: 10%;
+    display: none;
+    background-color: rgba(255, 255, 255, .3);
+    display: flex;
+    align-content: stretch;
+    justify-content: center
+  }
+
+
+  .button_img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .button_img {
+    position: relative;
+    width: 60%;
+    left: 25%;
+  }
+
+  .button_img .button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    max-width: 150px;
+    background-color: rgba(0, 102, 102, .9);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: customFont;
+    cursor: pointer;
+  }
+
+
+
+.events {
+  display: flex;
+  flex-flow: wrap;
+  padding: 3px 3px 3px 3px;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.event {
+  background-color: rgba(0, 102, 102, .4);
+  margin: 10px;
+  padding: 5px 5px 5px 5px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.event:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.flexform {
+  display: flex;
+   justify-content: flex-start;
+   flex-wrap: wrap;
+  min-height: 70px;
+  
+}
+
+
+.submit {
+  display: flex;
+  justify-content: flex-end;
+  min-height: 70px;
+}
+  /*Aside*/
+  aside .button:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+
+
+
+
+.maps {
+ 
+  display: flex;
+  flex-flow: column;
+  background-color: rgba(0, 0, 0, .3);
+}
+  .aside_title h1, main h1 {
+    background-color: rgba(0, 102, 102, .9);
+    font-size: large;
+    font-family: customFont;
+    color: white;
+    text-align: center;
+  }
+
+  aside .map_area {
+    display: flex;
+    align-content: center;
+    justify-content:flex-end;
+  }
+
+  .map_area h2 {
+    font-size: medium;
+    text-align: center;
+    color: white;
+    padding-top: 3em;
+    width: 150px;
+  }
+ 
+  .aside_title .map {
+    width: 300px;
+    height: 200px;
+  }
+
+  footer {
+    background-color: #333;
+    height: 50%
+  }

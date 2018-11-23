@@ -1,0 +1,243 @@
+
+/* Page Elements */
+
+body
+{
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #181818;
+    background-color: #afd48a;
+}
+
+#bloc_page
+{
+    width: 70%;
+    margin: auto;
+    
+}
+
+section h1, footer h1
+{
+    font-family: Dayrom, serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+/* Header */
+
+
+#logo img
+{
+  display: inline-flex;
+  float: left;
+   width: 100px;
+   height: 100px;
+   margin-right: 40px;
+   margin-left:10px;
+}
+
+header {
+  margin-top: 5px;
+  height: 200px;
+  width: 800px;
+  border-radius: 5px;
+  background: url('design1_image1.jpg') no-repeat;
+  position: relative;
+  box-shadow: 0px 4px 4px #1c1a19;
+  margin-bottom: 25px;
+}
+
+header h1
+{
+    font-family: Arial, sans-serif;
+    font-size: 2.5em;
+    font-weight: normal;
+    margin: 0 0 0 10px;
+    color: white;
+}
+
+header h2
+{
+    font-family: Dayrom, serif;
+    font-size: 1.1em;
+    margin-top: 0px;
+    font-weight: normal;
+}
+
+/* Navigation */ 
+
+
+nav a
+{
+    font-size: 1.3em;
+    color: #181818;
+    text-decoration: none;
+}
+
+.nav {
+  margin-left: auto;
+  font-size: 1.3em;
+  color: #181818;
+  text-decoration: none;
+}
+
+nav a:hover
+{
+    color: #479d23;
+    border-bottom: 3px solid #00ff21;
+}
+
+/* Bannière */
+
+
+
+#banner_details
+{
+    position: absolute;
+    bottom: 0;
+    border-radius: 0px 0px 5px 5px;
+    width: 99.5%;
+    height: 33px;
+    padding-top: 15px;
+    padding-left: 4px;
+    background-color: rgba(24,24,24,0.8);
+    color: white;
+    font-size: 0.8em;
+    
+}
+
+
+
+
+/* Body */
+
+
+
+.container
+{
+  margin-left: 40px;
+  
+}
+
+section {
+  margin-top:  40px;
+  display: flex;
+  margin-bottom: 20px;
+
+}section img {
+  max-width: 200px;
+}
+
+.event
+{
+    text-align: justify;
+}
+
+/*
+article, aside
+{
+    
+}
+
+
+
+.ico_categorie
+{
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+
+aside
+{ 
+    float: left;
+    flex: 1.2;
+    position: relative;
+    background-color: #706b64;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 0.9em;
+}
+
+#fleche_bulle
+{
+    position: absolute;
+    top: 100px;
+    left: -12px;
+}
+
+#photo_zozor
+{
+    text-align: center;
+}
+
+#photo_zozor img
+{
+    border: 1px solid #181818;
+}
+
+aside img
+{
+    margin-right: 5px;
+}*/
+
+/* Footer */
+
+footer
+{
+    display: flex;
+    background:  url('images/ico_top.png') no-repeat top center, url('images/separateur.png') repeat-x top, url('images/ombre.png') repeat-x top;
+    padding-top: 25px;
+}
+
+footer p, footer ul
+{
+    font-size: 0.8em;
+}
+
+footer h1
+{
+    font-size: 1.1em;
+}
+
+
+#tweet
+{
+    width: 28%;
+}
+
+#mes_photos
+{
+    width: 35%;
+}
+
+#mes_amis
+{
+    width: 31%;
+}
+
+#mes_photos img
+{
+    border: 1px solid #181818;
+    margin-right: 2px;
+}
+
+#listes_amis
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+}
+
+#mes_amis ul
+{
+    list-style-image: url('images/ico_liensexterne.png');
+    padding-left: 2px;
+}
+
+#mes_amis a
+{
+    text-decoration: none;
+    color: #760001;
+}

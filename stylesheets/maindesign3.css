@@ -1,0 +1,274 @@
+﻿
+* 
+{
+  box-sizing: content-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+  background-image: linear-gradient(to right, white, #71a377);
+}
+
+/*Header*/
+
+.header {
+  margin-top: 0px;
+
+  height: 250px;
+  background: url('design1_image1.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position-y: top;
+ 
+}
+
+@font-face {
+  font-family: customFont;
+  src: url(BrothersRegular.otf);
+}
+
+.title {
+  font-family: customFont;
+  text-transform: uppercase;
+  position: relative;
+  top: 150px;
+  color: white;
+  font-size: x-large;
+  line-height: normal;
+  text-align: center;
+  background-color: rgba(0, 102, 102, .7);
+  visibility: visible;
+}.title2 {
+  
+  color: black;
+  font-size: large;
+  border-radius: 10px;
+  margin-top: 0px;
+  visibility: collapse;
+  
+  
+}
+
+.logo img {
+  position: absolute;
+  top: 90px;
+  right: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+ /*Nav bar*/
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  height: 50px;
+  top: 0;
+  width: 100%;
+  z-index: 99999;
+}
+nav li {
+  float: left;
+  
+}
+  nav li img {
+    margin-right: 0px;
+    padding: 0px 0px;
+    height: 30px
+  }
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+  nav a {
+    background-color: rgba(0, 0, 0, .3);
+    color: #ddf1ca;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 30px;
+   
+  }
+  nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  nav a.active {
+    background-color: rgba(0, 102, 102, .9);
+    color: #32d519;
+  }
+nav img {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+
+
+.imagesection img {
+  visibility: collapse;
+}
+
+/*Body*/
+.container {
+  margin-left: 40px;
+}
+
+
+section h1{
+  font-size: x-large;
+}
+section h2 {
+  text-transform:uppercase;
+  font-size: large;
+}
+section p {
+  font-size: medium;
+}
+article {
+text-align: left}
+section ul {
+  list-style-type: decimal;
+  
+}
+
+.latin_ul ul {
+  list-style-type: lower-latin;
+}
+
+.square_ul ul {
+  list-style-type: square;
+}
+.decimal_ul ul {
+  list-style-type: decimal;
+}
+.circle_ul ul {
+  list-style-type: circle;
+}
+
+
+section img {
+  max-width: 200px;
+  float: left;
+  margin-left: 10px;
+}
+
+table {
+  padding-left: 60px;
+}
+table  td, th{
+  padding-left: 40px;
+}
+section {
+  padding-left: 5%;
+  padding-right: 10%;
+  display: none;
+  background-color: rgba(255, 255, 255, .3);
+  display: flex;
+  justify-content:center
+  
+}
+
+aside {
+  
+  float: right;
+  width: 30%;
+  background-color: rgba(0, 0, 0, .3);
+}
+
+.button_img img {
+  
+  
+  width: 100%;
+  height: auto;
+}
+.button_img {
+  position: relative;
+  width: 60%;
+  left: 25%;
+}
+
+footer {
+  
+
+}
+.button_img .button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  max-width: 150px;
+  background-color: rgba(0, 102, 102, .9);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: customFont;
+  cursor: pointer;
+}
+aside .button:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.aside_title h1 {
+  background-color: rgba(0, 102, 102, .9);
+  font-size: large;
+  font-family: customFont;
+  color: white;
+  text-align:center;
+}
+
+aside .map_area {
+ display: flex;
+ align-content:center;
+ 
+}
+
+.map_area h2 {
+  font-size:medium;
+  text-align:center;
+  color:white;
+  padding-top: 3em;
+  width:150px;
+}
+.aside_title .map {
+  width: 300px;
+  height: 200px;
+  /*position:relative;*/
+  
+  
+}
+.flexform {
+  display:flex;
+  align-content:space-between;
+  justify-content:flex-start;
+  min-height:50px; 
+  flex-grow:1;
+  }
+.submit {
+  display: flex;
+  justify-content: flex-end;
+  min-height:70px;
+  
+}
+.gridsection {
+  display: grid;
+  grid-column: 1 / 2;
+  grid-template-columns: 33% 33% 33%;
+}
